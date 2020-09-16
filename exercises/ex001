@@ -1,0 +1,5 @@
+#exercise 01
+print('Hello World!')
+msg = 'Hello mother fucker!'
+print(msg)
+print('Just fcking tests')
