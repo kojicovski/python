@@ -1,0 +1,6 @@
+n1 = int(input('Type a number 1: '))
+n2 = int(input('Type a number 2: '))
+soma = n1+n2
+print('Total {}'.format(n1+n2))
+print(f'A soma entre {n1} e {n2} é {soma}')
+
