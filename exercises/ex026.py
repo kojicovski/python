@@ -1,6 +1,5 @@
-txt = input('Type your text')
+txt = str(input('Type your text')).lower().strip()
 
 print('Your text have {} letters'.format(txt.count('a')))
-print('First appear: {}'.format(txt.find('a')))
-
-#Need a feature
+print('First appear in position: {}'.format(txt.find('a')))
+print('Last appear in position: {}'.format(txt.rfind('a')))
