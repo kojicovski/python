@@ -1,10 +1,10 @@
-year = int(input('Type the year'))
+from datetime import date
 
-print(year/4)
+year = int(input('Type the year: '))
 
-if year % 400 == 0:
-    print('Bissexto')
-elif year % 4 == 0:
-    print('Bisexto')
+if year == 0:
+    year = date.today().year
+if year % 4 == 0 and year % 100 != 0 or year % 400 == 0:
+    print(f'{year} is a leap year')
 else:
-    print('not bisexto')
+    print("This isn't a leap year")
