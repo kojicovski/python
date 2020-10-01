@@ -21,14 +21,18 @@ for i in range(2):
 aveg_age = 0.0
 old_guy = ''
 age_old_guy = 0
+male_count = 0
 
 for i in range(2):
     aveg_age = (aveg_age + p[i].age)
-    if i == 4:
-        aveg_age = aveg_age / i
-    if p[i].age > age_old_guy:
+    if i > 0:
+        aveg_age = aveg_age / (i+1)
+    if p[i].sex == 'male' and p[i].age > age_old_guy:
         age_old_guy = p[i].age
         old_guy = p[i].name
+    if p[i].sex == 'female' and p[i].age < 20:
+        male_count += 1
 
 print(f'Average age {aveg_age}')
 print(f'Old guy is {old_guy}')
+print(f'{male_count} women are under 20 years old.')
