@@ -18,23 +18,15 @@ li = []
 for i in range(5):
     add_num = int(input("Type a number: "))
 
-    if li == []:
-        li.append(li)
-        print("Num added to list")
-    elif max(li) < add_num:
+    if i == 0 or add_num > li[-1]:
         li.append(add_num)
-        print("Num added at the end of the list")
-    elif min(li) > add_num:
-        li.insert(add_num, 0)
-        print("Num added at the beginning of the list")
     else:
         for j, k in enumerate(li):
-            if k > add_num:
+            if add_num <= k:
                 li.insert(j, add_num)
-                print(f'Número {add_num} adicionado na posição {j}')
                 break
-            if k == add_num:
-             break
+print(li)
+
 
 
 
