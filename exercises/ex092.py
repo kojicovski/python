@@ -12,7 +12,7 @@ people["WorkCard"] = int(input("Work Card: "))
 
 if people["WorkCard"] == 0:
     for v, k in people.items():
-        print(f"{k}: {v}")
+        print(f"{v}: {k}")
 else:
     people["Hiring"] = int(input("Year of Hiring: "))
     people["Salary"] = float(input("Salary: R$"))
